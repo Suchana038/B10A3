@@ -98,15 +98,15 @@
           class=" rounded-lg shadow-2xl "/>
         <div class="p-6 text-center">
           <h1 class="text-3xl font-bold">A barn house of this design has a striking appearance </h1>
-          <p class=" py-6 text-sm text-gray-600 text-center font-medium ">
+          <p class=" py-6 text-xs text-gray-600 text-center font-medium lg:px-52">
             Barn house are just what they sound like: residences that originated as, or are inspired by, buildings used for housing livestock or storing fodder or farm equipment. But these homes take many shapes and forms.
            
           </p>
           
+           
             <button class="btn bg-most_color rounded-full font-bold py-2 px-4 hover:bg-most_color">View Details
               <i class="fa-solid fa-arrow-right transform rotate-[-45deg] bg-green-300 rounded-full p-2 text-black "></i>
             </button>
-        
           
         </div>
       </div>
@@ -115,39 +115,55 @@
    </header>
    <!-- main section -->
    <main>
-    <!-- Thoughtful Section Start-->
-     <section>
-      <img src="./assets/Vector.png" class="hidden lg:inline ml-64">
-       <div class="flex flex-col  lg:flex-row ">
-        <div class="  lg:ml-72 w-full h-full">
-          <p class="ml-5 w-32 pl-5 rounded-full mt-4 text-gray-600 bg-white "><i class="fa-solid fa-arrow-right"></i> About US</p>
-          <h2 class="text-2xl font-bold  mx-4 w-11/12 lg:text-3xl font-bold mt-2 w-11/12">We design thoughtful, liveable spaces </h2>
-          <p class=" text-gray-700 text-xs mt-6 w-11/12 mx-4 lg:text-gray-700 text-xs mt-2 w-11/12">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-          <div class=" bg-slate-50 flex items-start mb-6 p-3 mt-6 ml-4 lg:bg-slate-50 flex items-start mb-6 p-3 mt-2 w-11/12 ml-4">
-            <div>
-              <img src="./assets/commercial.png" class="  text-gray-600 mr-5">
-            </div> 
-            <div class="p-2">
-              <h2 class="text-xl font-bold">Commercial</h2>
-              <p class="text-xs text-gray-800 pl-2">The barn house captivates with its blend of rustic charm and modern.</p>
+    <!-- Thoughtful Section Start--> 
+     <img src="./assets/Vector.png" class="hidden lg:inline ml-40">
+     <div class="container mx-auto px-4 py-8 w-11/12 lg:ml-48">
+      <!-- Top Heading with Icon -->
+      <div class="flex items-center mb-4">
+        <span class="bg-white text-gray-600 px-4 py-2 rounded-full text-sm">
+          <i class="fa-solid fa-arrow-right pr-2"></i>
+           About Us</span>
+      </div>
+    
+      <!-- Main Content Section -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Left Side (Text Content) -->
+        <div>
+          <h2 class="text-3xl lg:text-3xl font-bold text-gray-900 mb-4">We design thoughtful, liveable spaces
+          </h2>
+          <p class="text-gray-600 mb-6 text-xs">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          
+          <!-- Services Section -->
+          <div class="space-y-4">
+            <!-- Commercial -->
+            <div class="flex items-start bg-white rounded-lg p-2">
+              <span class="text-2xl mr-4"><img src="./assets/commercial.png "></span> 
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">Commercial</h3>
+                <p class="text-gray-600 text-xs">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+            </div>
+            
+            <!-- Residential -->
+            <div class="flex items-start bg-white rounded-lg p-2">
+              <span class="text-2xl mr-4"><img src="./assets/residential.png"></span> 
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">Residential</h3>
+                <p class="text-gray-600 text-xs">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
             </div>
           </div>
-          <div class="bg-slate-50 flex items-start mb-6 p-3 mt-6 ml-4 lg:bg-slate-50 flex items-start mb-6 p-3 mt-2 w-11/12 ml-4 ">
-            <div>
-              <img src="./assets/residential.png" class="  text-gray-600 mr-5">
-            </div>
-            <div class="p-2">
-              <h2 class="text-xl font-bold">Residential</h2>
-              <p class="text-xs text-gray-800 pl-2">The barn house captivates with its blend of rustic charm and modern.</p>
-            </div>
-          </div>
-         </div>
-         <div class=" lg: w-full h-full ">
-          <img src="./assets/Rectangle.png" class="object-cover 
-            w-80 pl-10  lg:w-80 pt-[100px] ">
         </div>
-       </div>
-     </section>
+        
+        <!-- Right Side (Image Content) -->
+        <div class="rounded-lg overflow-hidden ">
+          <img src="./assets/Rectangle.png" alt="Building Image" class="w-full h-full object-cover lg:w-80">
+        </div>
+      </div>
+    </div>
      <!-- Thoughtful section End -->
 
         <!-- Work Section Start -->
@@ -161,7 +177,7 @@
             </div>
             <h2 class="text-2xl lg:text-3xl font-bold text-center mb-6 text-gray-900">Our Works Process</h2>
             <p class="text-center text-gray-600 mb-8">
-              The Farm House cooperates with its band of hustle clients and modern agriculturalist, featuring weed removal work, cattle rearing benefits.
+              The barn house captivates with its blend of rustic charm and modern.
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -175,8 +191,8 @@
                   </div>
                   <h3 class="text-xl font-semibold ml-3 text-gray-900">Concept</h3>
                 </div>
-                <p class="text-gray-700 ml-3">
-                  The Farm House cooperates with its band of hustle clients and modern...
+                <p class="text-gray-700 ml-3 text-xs">
+                  The barn house captivates with its blend of rustic charm and modern.
                 </p>
               </div>
               
@@ -188,8 +204,8 @@
                   </div>
                   <h3 class="text-xl font-semibold ml-3 text-gray-900">Design Process</h3>
                 </div>
-                <p class="text-gray-700 ml-3">
-                  The Farm House cooperates with its band of hustle clients and modern...
+                <p class="text-gray-700 ml-3 text-xs">
+                  The barn house captivates with its blend of rustic charm and modern.
                 </p>
               </div>
               
@@ -201,8 +217,8 @@
                   </div>
                   <h3 class="text-xl font-semibold ml-3 text-gray-900">Supervision</h3>
                 </div>
-                <p class="text-gray-700 ml-3">
-                  The Farm House cooperates with its band of hustle clients and modern...
+                <p class="text-gray-700 ml-3 text-xs">
+                  The barn house captivates with its blend of rustic charm and modern.
                 </p>
               </div>
               
@@ -214,8 +230,8 @@
                   </div>
                   <h3 class="text-xl font-semibold ml-3 text-gray-900">Budget Planning</h3>
                 </div>
-                <p class="text-gray-700 ml-3">
-                  The Farm House cooperates with its band of hustle clients and modern...
+                <p class="text-gray-700 ml-3 text-xs">
+                  The barn house captivates with its blend of rustic charm and modern.
                 </p>
               </div>
               
