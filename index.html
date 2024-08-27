@@ -22,6 +22,17 @@
         .bg-custom {
           background-image: url(./assets/bg.jpg);
         }
+
+        /* Drawer open/close toggle using hidden checkbox */
+        #drawerToggle:checked ~ #drawer {
+            transform: translateX(0);
+        }
+
+        /* FAQ toggle */
+        #faq1:checked ~ #faq1-content,
+        #faq2:checked ~ #faq2-content {
+            display: block;
+        }
      </style>
 <!-- tailwind configurtion -->
 <script>
@@ -278,7 +289,7 @@
                   </div>
                   
                 </div>
-                <div class="bg-white "><img src="./assets/img2.png" class="object-cover  h-full overflow-hidden shadow-lg rounded-lg"></div>
+                <div class="bg-white "><img src="./assets/img2.png" class="object-cover w-full h-full overflow-hidden shadow-lg rounded-lg"></div>
               </div>
             </div>
             <!-- 2nd portfolio section -->
@@ -286,7 +297,7 @@
               <div class="flex flex-col lg:flex-row gap-4">
                 <div class="bg-white hidden lg:inline "><img src="./assets/img3.png" class="object-cover w-full h-full overflow-hidden shadow-lg rounded-lg "></div>
 
-                <div class="bg-white inline lg:hidden "><img src="./assets/img5.png" class="object-cover w-full h-full overflow-hidden shadow-lg rounded-lg"></div>
+                <div class="bg-white inline lg:hidden mt-[-40px]"><img src="./assets/img5.png" class="object-cover w-full h-full overflow-hidden shadow-lg rounded-lg"></div>
                 <div class=" h-full  bg-white p-6 shadow-lg rounded-lg ">
                   <div class=" flex flex-col lg:flex-row card card-side bg-base-100 ">
                     <figure>
@@ -334,7 +345,7 @@
                 </div>
                 <div class="mx-6">
                   <textarea class="rounded-lg p-3  w-full mt-4" rows="4" placeholder="Write your message here..." required></textarea>
-                <button class="bg-[#ABEF5F] text-black font-semibold py-3 px-6 rounded-full mt-4 hover:bg-green-600 w-full ">Send Now
+                <button class="bg-[#ABEF5F] text-black font-semibold py-3 px-6 rounded-full mt-4 mb-4 hover:bg-green-600 w-full ">Send Now
                   <i class="fa-solid fa-arrow-right transform rotate-[-45deg] bg-black rounded-full p-2 text-gray-300 ml-2 "></i>
                 </button>
                 </div>
@@ -343,10 +354,110 @@
         </div>
            <!-- Form section end -->
 
+           <!-- Unique Section Start -->
 
+          
+          <div class="mx-14">
+            <div class="carousel w-full mt-8  ">
+              <div id="item1" class="carousel-item w-full">
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                  class="w-full" />
+              </div>
+              <div id="item2" class="carousel-item w-full">
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+                  class="w-full" />
+              </div>
+              <div id="item3" class="carousel-item w-full">
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+                  class="w-full" />
+              </div>
+              <div id="item4" class="carousel-item w-full">
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+                  class="w-full" />
+              </div>
+            </div>
+            <div class="flex w-full justify-center gap-2 py-2">
+              <a href="#item1" class="btn btn-xs">1</a>
+              <a href="#item2" class="btn btn-xs">2</a>
+              <a href="#item3" class="btn btn-xs">3</a>
+              <a href="#item4" class="btn btn-xs">4</a>
+            </div> 
+          </div>
+            
+          <label class="swap flex justify-center">
+            <!-- this hidden checkbox controls the state -->
+            <input type="checkbox" />
+          
+            <!-- volume on icon -->
+            <svg
+              class="swap-on fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 24 24">
+              <path
+                d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z" />
+            </svg>
+          
+            <!-- volume off icon -->
+            <svg
+              class="swap-off fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 24 24">
+              <path
+                d="M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z" />
+            </svg>
+          </label>
+            <!-- Unique Section End -->
    </main>
   <!-- footer section -->
    <footer>
+    <!-- Footer Section Start -->
+           
+    <div class="bg-gray-900  ">
+      <div class="  flex flex-col items-center justify-center  p-4">
+  
+          <!-- Navbar -->
+          <nav class=" w-full p-4 rounded-lg">
+              <div class="flex flex-col justify-between items-center">
+                  <div class="text-2xl font-bold text-green-400 mb-2 mt-4 sm:mb-0">
+                    <i class="fa-solid fa-arrow-right transform rotate-[-45deg] bg-[#ABEF5F]  rounded-full p-1 text-black mr-1"></i>
+                    Rinterio</div>
+                  <div class=" text-center mb-4 mt-4">
+                    <p class="text-sm text-gray-600 max-w-md mx-auto">
+                      We provide innovative and modern digital solutions. Get in touch with us to create your dream project.
+                  </p>
+                  </div>
+
+                  <ul class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6 text-center text-gray-400 text-sm">
+                      <li><a href="#" class="hover:text-green-400 ">Home</a></li>
+                      <li><a href="#" class="hover:text-green-400">Services</a></li>
+                      <li><a href="#" class="hover:text-green-400">Portfolio</a></li>
+                      <li><a href="#" class="hover:text-green-400">Blog</a></li>
+                      <li><a href="#" class="hover:text-green-400">Contact Us</a></li>
+                  </ul>
+              </div>
+          </nav>
+  
+          <!--  Content -->
+          <div class="text-center mt-8">
+              
+              <button class="mt-6 bg-[#ABEF5F] text-black  px-8 py-3 rounded-full hover:bg-green-600 focus:outline-none transition-colors w-full">
+                  Book Consult
+                  <i class="fa-solid fa-arrow-right transform rotate-[-45deg] bg-black rounded-full p-1 text-gray-500 ml-1 "></i>
+              </button>
+          </div>
+  
+      </div>
+  
+  </div>
+     <!-- Footer Section End -->
    </footer>
 </body>
 </html>
